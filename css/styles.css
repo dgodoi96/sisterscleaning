@@ -1,0 +1,17 @@
+.estimate{
+  margin: 5%;
+}
+hr{
+  border-style: none;
+  border-top-style: dotted;
+  border-color: gray;
+  border-width: 5px;
+  width: 5%;
+}
+h1,h2,h3{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  color: #66BFBF;
+}
