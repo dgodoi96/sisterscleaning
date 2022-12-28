@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Sister's Cleaning</title>
+  <title>EZ Cleaning</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -18,60 +18,96 @@
         <a href="contact">CONTACT</a>
       </div>
     </nav>
-    <h1>SISTER'S CLEANING</h1>
+    <h1>EZ CLEANING</h1>
     <H2>AFFORDABLE AND QUALITY CLEANING</H2>
   </div>
   <hr>
   <div class="services">
     <H3>SERVICES</H3>
+    <div class="services-conteiner">
+      <div class="standard-clean">
+        <h4>STANDARD CLEANING</h4>
+        <h4>Keep your home cleaned</h4>
+        <h5>If your home has been cleaning a while and you need someone to help you and take care of daily cleaning this is a good match for you. Your start service is a good option for flooring and dust, passing for a good bathroom cleaning and a better smelling place.</h5>
+      </div>
+      <div class="deep-clean">
+        <h4>DEEP CLEANING</h4>
+        <h4>Cleaning for those who needs more</h4>
+        <h5>If your home has been cleaning a while and you need someone to help you and take care of daily cleaning this is a good match for you. Your start service is a good option for flooring and dust, passing for a good bathroom cleaning and a better smelling place.</h5>
+      </div>
+      <div class="move-clean">
+        <h4>MOVE IN / OUT CLEANING</h4>
+        <h4>fresh house to our moving</h4>
+        <h5>If your home has been cleaning a while and you need someone to help you and take care of daily cleaning this is a good match for you. Your start service is a good option for flooring and dust, passing for a good bathroom cleaning and a better smelling place.</h5>
+      </div>
+    </div>
   </div>
   <hr>
   <div class="estimate">
     <H3>GET YOUR ESTIMATE</H3>
     <h4>Let's start with the simple!</h4>
     <div class="homeinfo">
-      <h4>How many Bedrooms and Bathrooms do you have?</h4>
-      <label for="qtdBeds">Bedrooms</label>
-      <input class="selecQtd" type="number" name="qtdBeds" min="1 "value="1">
-      <label for="qtdBaths">Bathrooms</label>
-      <input class="selecQtd" type="number" name="qtdBaths" min="1" value="1">
-      <h4>Any extra room? like a office or second living room?</h4>
-      <label for="qtdRoom">I have others </label>
-      <input class="selecQtd" type="number" name="qtdRoom" min="0" value="0" <p> more rooms. </p>
+      <div class="cleaningtype">
+        <form>
+          <input type="radio" id="stclean" name="type_clean" value="Standard">
+          <label for="stclean">Standard Cleaning</label><br>
+          <input type="radio" id="dpclean" name="type_clean" value="Deep">
+          <label for="dpclean">Deep Clean</label><br>
+          <input type="radio" id="moveclean" name="Type_clean" value="Move">
+          <label for="moveclean">Move In / Out Cleaning</label>
+        </form>
+      </div>
+      <div class="homespecs">
+        <h4>How many Bedrooms and Bathrooms do you have?</h4>
+        <label for="qtdBeds">Bedrooms</label>
+        <input class="selecQtd" type="number" name="qtdBeds" min="1 "value="1">
+        <label for="qtdBaths">Bathrooms</label>
+        <input class="selecQtd" type="number" name="qtdBaths" min="1" value="1">
+        <label for="homesize">How big is your home?</label>
+        <input for="homesize" list="homesize">
+          <datalist id="homesize">
+            <option value="500 - 1000 sqft" />
+            <option value="1000 - 1500 sqft" />
+            <option value="1500 - 2500 sqft" />
+            <option value="2500 - 3500 sqft" />
+            <option value="above 3500 sqft" />
+          </datalist>
+      </div>
     </div>
-    <h4>Now, tell more what you looking at</h4>
-    <div class="cleaningtype">
-      <h4>What kind of cleaning is good for you?</h4>
+    <div class="cleaning_addon">
+      <div class="extraroom">
+        <h4>Any extra room that needs cleaning? <br> (Like a extra living room, gym or office)</h4>
+        <label for="qtdRoom">Extra Rooms </label>
+        <input class="selecQtd" type="number" name="qtdRoom" min="0" value="0">
+        <label for="outsideroom">Garage / Patio </label>
+        <input class="selecQtd" type="number" name="outsideroom" min="0" value="0">
+      </div>
+      <div class="extraservices">
+        <label for="qtdPets">Any Pets?</label>
+        <input class="selecQtd" type="number" name="pets" min="0"value="0">
+        <label for="fridge">Inside Fridge</label>
+        <input class="selecQtd" type="number" name="fridge" min="0"value="0">
+        <label for="oven">Inside Oven</label>
+        <input class="selecQtd" type="number" name="oven" min="0"value="0">
+        <label for="cabinets">Inside Cabinets</label>
+        <input class="selecQtd" type="number" name="cabinets" min="0"value="0">
+        <label for="window">Interior Windowns</label>
+        <input class="selecQtd" type="number" name="window" min="0"value="0">
+        <label for="glassDoor">Glass Door</label>
+        <input class="selecQtd" type="number" name="glassDoor" min="0"value="0">
 
+      </div>
     </div>
-  </div>
-  <hr>
-  <div class="contact">
-    <H3>CONTACT</H3>
   </div>
   <hr>
   <div class="customers">
     <h3>OUR CUSTOMERS</h3>
   </div>
   <hr>
+  <div class="contact">
+    <H3>CONTACT</H3>
+  </div>
   <footer>
-    <table>
-      <tr>
-        <th>
-        <td>
-          <h4>bussines hours</h4>
-        </td>
-        </th>
-        <th>
-        <td>
-          <h4><a href="https://www.fb.com">Facebook</a></h4>
-        </td>
-        <td>
-          <h4><a href="fb.com">Whats App</a></h4>
-        </td>
-        </th>
-      </tr>
-    </table>
   </footer>
 </body>
 
